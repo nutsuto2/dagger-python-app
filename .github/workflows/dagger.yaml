@@ -12,8 +12,8 @@ jobs:
     name: dagger
     runs-on: ubuntu-latest
     steps:
-      - name: Checkpoint
-        uses: actions/checkpoint@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
       - name: Test
         id: test
         uses: dagger/dagger-for-github@8.0.0
